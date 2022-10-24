@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counting_Elements", "Counti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime_and_Composite_Numbers", "Prime_and_Composite_Numbers\Prime_and_Composite_Numbers.csproj", "{1D61E1BC-5246-4BF9-962A-2D044332C7B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prefix_Sums", "Prefix_Sums\Prefix_Sums.csproj", "{0B2AE5BA-BA65-42E5-B8D1-427896B5F916}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1D61E1BC-5246-4BF9-962A-2D044332C7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D61E1BC-5246-4BF9-962A-2D044332C7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D61E1BC-5246-4BF9-962A-2D044332C7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B2AE5BA-BA65-42E5-B8D1-427896B5F916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B2AE5BA-BA65-42E5-B8D1-427896B5F916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B2AE5BA-BA65-42E5-B8D1-427896B5F916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B2AE5BA-BA65-42E5-B8D1-427896B5F916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
