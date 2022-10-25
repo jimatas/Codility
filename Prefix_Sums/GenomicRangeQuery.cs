@@ -70,43 +70,63 @@ namespace Prefix_Sums
 
         public int[] solution(string S, int[] P, int[] Q)
         {
-            // write your code in C# 6.0 with .NET 4.7 (Mono 6.12)
-
-            var s = S.ToCharArray().Select(c =>
+            IDictionary<char, int[]> lastOccurrences = new Dictionary<char, int[]>
             {
-                switch (c)
+                { 'A', new int[S.Length] },
+                { 'C', new int[S.Length] },
+                { 'G', new int[S.Length] }
+            };
+
+            int lastOccurrenceOfA = -1;
+            int lastOccurrenceOfC = -1;
+            int lastOccurrenceOfG = -1;
+
+            for (int i = 0; i < S.Length; i++)
+            {
+                if (S[i] == 'A')
                 {
-                    case 'A': return 1;
-                    case 'C': return 2;
-                    case 'G': return 3;
-                    default: return 4;
+                    lastOccurrenceOfA = i;
                 }
-            }).ToArray();
+                else if (S[i] == 'C')
+                {
+                    lastOccurrenceOfC = i;
+                }
+                else if (S[i] == 'G')
+                {
+                    lastOccurrenceOfG = i;
+                }
 
-            ICollection<int> result = new List<int>();
+                lastOccurrences['A'][i] = lastOccurrenceOfA;
+                lastOccurrences['C'][i] = lastOccurrenceOfC;
+                lastOccurrences['G'][i] = lastOccurrenceOfG;
+            }
 
-            for (int i = 0; i < P.Length; i++)
+            int[] result = new int[P.Length];
+
+            for (var i = 0; i < P.Length; i++)
             {
                 var p = P[i];
                 var q = Q[i];
 
-                int f = 4;
-                for (var j = p; j <= q; j++)
+                if (lastOccurrences['A'][q] >= p)
                 {
-                    if (s[j] < f)
-                    {
-                        f = s[j];
-                        if (f == 1)
-                        {
-                            break;
-                        }
-                    }
+                    result[i] = 1;
                 }
-
-                result.Add(f);
+                else if (lastOccurrences['C'][q] >= p)
+                {
+                    result[i] = 2;
+                }
+                else if (lastOccurrences['G'][q] >= p)
+                {
+                    result[i] = 3;
+                }
+                else
+                {
+                    result[i] = 4;
+                }
             }
 
-            return result.ToArray();
+            return result;
         }
     }
 }
