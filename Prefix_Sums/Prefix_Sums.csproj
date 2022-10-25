@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CountDiv.cs" />
+    <Compile Include="GenomicRangeQuery.cs" />
     <Compile Include="PassingCars.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
