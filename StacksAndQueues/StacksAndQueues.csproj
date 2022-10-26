@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Brackets.cs" />
     <Compile Include="Fish.cs" />
+    <Compile Include="Nesting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
