@@ -58,7 +58,8 @@ namespace Maximum_Slice_Problem
         {
             // write your code in C# 6.0 with .NET 4.7 (Mono 6.12)
 
-            int sum = 0, maxSum = int.MinValue;
+            int maxSum = -1_000_000;
+            int sum = 0;
             for (int i = 0; i < A.Length; i++)
             {
                 sum += A[i];

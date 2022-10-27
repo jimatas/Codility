@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MaxProfit.cs" />
     <Compile Include="MaxSliceSum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
