@@ -103,10 +103,10 @@ namespace Prefix_Sums
 
             int[] result = new int[P.Length];
 
-            for (var i = 0; i < P.Length; i++)
+            for (int i = 0; i < P.Length; i++)
             {
-                var p = P[i];
-                var q = Q[i];
+                int p = P[i];
+                int q = Q[i];
 
                 if (lastOccurrences['A'][q] >= p)
                 {

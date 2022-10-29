@@ -93,7 +93,7 @@ namespace Counting_Elements
             int maxValue = 0;
             int previousMaxValue = 0;
 
-            foreach (var operation in A)
+            foreach (int operation in A)
             {
                 if (operation <= N)
                 {
@@ -101,7 +101,7 @@ namespace Counting_Elements
                 }
                 else if (maxValue != previousMaxValue)
                 {
-                    for (var j = 0; j < N; j++)
+                    for (int j = 0; j < N; j++)
                     {
                         counters[j] = maxValue;
                     }

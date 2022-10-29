@@ -71,7 +71,7 @@ namespace Prefix_Sums
         {
             // write your code in C# 6.0 with .NET 4.7 (Mono 6.12)
 
-            var zeroes = 0;
+            int zeroes = 0;
             int onesPassed = 0;
             for (int i = 0; i < A.Length; i++)
             {
