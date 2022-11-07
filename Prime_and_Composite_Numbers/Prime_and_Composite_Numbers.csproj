@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CountFactors.cs" />
     <Compile Include="Flags.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
